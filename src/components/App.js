@@ -1,30 +1,23 @@
 import React from 'react';
 import PlacarContainer from './PlacarContainer';
 
-
 const dados = {
-	partida:{
-		estadio:"Mane garrincha",
-		data:"12/08/2018",
-		horario:"19:00h"
+	partida: {
+		estadio: "Mane garrincha",
+		data: "12/08/2018",
+		horario: "19:00h"
 	},
-	casa:{
-		nome:"Vasco"
+	casa: {
+		nome: "Vasco"
 	},
-	visitante:{
+	visitante: {
 		nome: "Gremio"
 	},
-	 tempo:92
+	tempo: 92
 };
 
-
-
-
-
 export default class App extends React.Component {
-	render(){
+	render() {
 		return <PlacarContainer {...dados} />;
 	}
 }
-
-
